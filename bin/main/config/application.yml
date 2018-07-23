@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;database=demonstration;user=newadmin;password=pass;
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    properties:
+      hibernate.temp.use_jdbc_metadata_defaults: false
+#    hibernate:
+#      ddl-auto: update
+server:
+  port: 9050
